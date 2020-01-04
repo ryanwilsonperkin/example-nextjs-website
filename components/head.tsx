@@ -1,15 +1,21 @@
 import React from "react";
 import NextHead from "next/head";
-import { string } from "prop-types";
 
+const defaultTitle = "";
 const defaultDescription = "";
 const defaultOGURL = "";
 const defaultOGImage = "";
 
-const Head = props => (
+interface Props {
+  title?: string;
+  description?: string;
+  url?: string;
+  ogImage?: string;
+}
+const Head: React.FC<Props> = props => (
   <NextHead>
     <meta charSet="UTF-8" />
-    <title>{props.title || ""}</title>
+    <title>{props.title || defaultTitle}</title>
     <meta
       name="description"
       content={props.description || defaultDescription}
@@ -30,12 +36,5 @@ const Head = props => (
     <meta property="og:image:height" content="630" />
   </NextHead>
 );
-
-Head.propTypes = {
-  title: string,
-  description: string,
-  url: string,
-  ogImage: string
-};
 
 export default Head;
