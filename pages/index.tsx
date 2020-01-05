@@ -1,14 +1,9 @@
 import React from "react";
-import Link from "next/link";
-import Head from "../components/head";
-import Nav from "../components/nav";
 import Layout from "../components/layout";
 
 const Home = () => {
   return (
-    <Layout>
-      <Head title="Home" />
-
+    <Layout title="Home">
       <section id="title">
         <h1>Ryan</h1>
         <h2>Wilson-Perkin</h2>

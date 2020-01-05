@@ -2,6 +2,7 @@ import React from "react";
 import NextHead from "next/head";
 
 import Nav from "../components/nav";
+import Head from "./head";
 
 const Fonts: React.FC = () => (
   <link
@@ -27,12 +28,16 @@ const GoogleAnalyticsScript: React.FC = () => (
   />
 );
 
-const Layout: React.FC = props => (
+interface Props {
+  title: string;
+}
+const Layout: React.FC<Props> = props => (
   <>
     <NextHead>
       <Fonts />
       <GoogleAnalyticsScript />
     </NextHead>
+    <Head title={props.title} />
 
     <Nav />
     {props.children}
