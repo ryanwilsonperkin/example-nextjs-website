@@ -1,13 +1,12 @@
 import React from "react";
 import Head from "../components/head";
-import Nav from "../components/nav";
+import Layout from "../components/layout";
 
 const Home = () => {
   return (
-    <>
+    <Layout>
       <Head title="Posts" />
-      <Nav />
-    </>
+    </Layout>
   );
 };
 

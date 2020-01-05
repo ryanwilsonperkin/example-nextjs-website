@@ -8,7 +8,6 @@ const Home = () => {
   return (
     <Layout>
       <Head title="Home" />
-      <Nav />
 
       <section id="title">
         <h1>Ryan</h1>

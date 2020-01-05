@@ -1,6 +1,8 @@
 import React from "react";
 import NextHead from "next/head";
 
+import Nav from "../components/nav";
+
 const Fonts: React.FC = () => (
   <link
     href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,700italic|Merriweather:300,300italic,700,700italic"
@@ -31,6 +33,8 @@ const Layout: React.FC = props => (
       <Fonts />
       <GoogleAnalyticsScript />
     </NextHead>
+
+    <Nav />
     {props.children}
     <style jsx global>
       {`
