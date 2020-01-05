@@ -1,6 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import PostLayout from "../../../../layouts/post";
+import PostLayout from "../../../../../layouts/post";
 
 const Post: React.FC = () => (
   <PostLayout title="Co-op at Wave Accounting" date="2013/09/11">
