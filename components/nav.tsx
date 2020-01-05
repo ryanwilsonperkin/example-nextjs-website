@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 const Nav = () => (
-  <nav id="navbar">
+  <nav>
     <ul>
       <li>
         <Link href="/">
@@ -17,29 +17,30 @@ const Nav = () => (
     </ul>
 
     <style jsx>{`
-      :global(body) {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
-      }
       nav {
-        text-align: center;
+        text-align: right;
+        margin-top: 10px;
+        margin-right: 10px;
       }
-      ul {
-        display: flex;
-        justify-content: space-between;
+
+      nav a {
+        font-weight: normal;
       }
-      nav > ul {
-        padding: 4px 16px;
+
+      nav ul {
+        list-style: none;
       }
-      li {
-        display: flex;
-        padding: 6px 8px;
+
+      nav ul li {
+        display: inline;
       }
-      a {
-        color: #067df7;
-        text-decoration: none;
-        font-size: 13px;
+
+      nav ul li:after {
+        content: " / ";
+      }
+
+      nav ul li:last-child:after {
+        content: "";
       }
     `}</style>
   </nav>
