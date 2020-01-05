@@ -2,7 +2,7 @@ import React from "react";
 import NextHead from "next/head";
 
 import Nav from "../components/nav";
-import Head from "./head";
+import Head from "../components/head";
 
 const Fonts: React.FC = () => (
   <link
@@ -31,7 +31,7 @@ const GoogleAnalyticsScript: React.FC = () => (
 interface Props {
   title: string;
 }
-const Layout: React.FC<Props> = props => (
+const MainLayout: React.FC<Props> = props => (
   <>
     <NextHead>
       <Fonts />
@@ -243,4 +243,4 @@ const Layout: React.FC<Props> = props => (
   </>
 );
 
-export default Layout;
+export default MainLayout;
