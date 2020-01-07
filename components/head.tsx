@@ -5,7 +5,7 @@ const defaultTitle = "";
 const defaultDescription =
   "I'm a full-stack developer living in beautiful Toronto, Ontario.";
 const defaultOGURL = "";
-const defaultOGImage = "";
+const defaultOGImage = "https://ryanwilsonperkin.com/profile.jpg";
 
 interface Props {
   title?: string;
