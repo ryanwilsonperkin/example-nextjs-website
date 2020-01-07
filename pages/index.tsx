@@ -3,7 +3,7 @@ import Layout from "../layouts/main";
 
 const Home = () => {
   return (
-    <Layout title="Home">
+    <Layout title="Ryan Wilson-Perkin">
       <section id="title">
         <h1>Ryan</h1>
         <h2>Wilson-Perkin</h2>
