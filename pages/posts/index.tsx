@@ -72,7 +72,7 @@ const Posts = () => {
         <h1>Posts</h1>
         {postsByYear.map(({ year, posts }) => (
           <React.Fragment key={year}>
-            <h2 className="date">{year}</h2>
+            <h2>{year}</h2>
             <hr />
             <ul>
               {posts.map(({ title, link, date, excerpt }) => (
@@ -82,7 +82,7 @@ const Posts = () => {
                       <a>{title}</a>
                     </Link>
                   </h3>
-                  <small className="date">Published {date}</small>
+                  <small>Published {date}</small>
                   <ReactMarkdown source={excerpt} />
                   <Link href={link}>
                     <a>Continue reading...</a>

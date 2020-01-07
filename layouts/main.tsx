@@ -28,6 +28,19 @@ const GoogleAnalyticsScript: React.FC = () => (
   />
 );
 
+const textColor = {
+  light: "#444",
+  dark: "#CCC"
+};
+const headingColor = {
+  light: "#333",
+  dark: "#DDD"
+};
+const linkColor = {
+  light: "#3a7bb3",
+  dark: "#479ce5"
+};
+
 interface Props {
   title: string;
 }
@@ -44,7 +57,7 @@ const MainLayout: React.FC<Props> = props => (
     <style jsx global>
       {`
         body {
-          color: #444;
+          color: ${textColor.light};
           font-family: "Merriweather", serif;
           font-weight: 300;
           font-size: 16px;
@@ -59,7 +72,7 @@ const MainLayout: React.FC<Props> = props => (
         h5,
         h6 {
           font-family: "Source Sans Pro", sans-serif;
-          color: #333;
+          color: ${headingColor.light};
           margin-bottom: 0.25em;
         }
 
@@ -90,15 +103,15 @@ const MainLayout: React.FC<Props> = props => (
         a {
           font-weight: bold;
           text-decoration: none;
-          color: #3a7bb3;
+          color: ${linkColor.light};
         }
 
         a:visited {
-          color: #3a7bb3;
+          color: ${linkColor.light};
         }
 
         a:hover {
-          color: #3a7bb3;
+          color: ${linkColor.light};
         }
 
         img {
@@ -138,10 +151,6 @@ const MainLayout: React.FC<Props> = props => (
 
         .post img {
           margin: 0 auto;
-        }
-
-        .date {
-          color: darkgrey;
         }
 
         #title {
@@ -236,6 +245,38 @@ const MainLayout: React.FC<Props> = props => (
           }
           blockquote {
             line-height: 1.4em;
+          }
+        }
+
+        /* Dark theme */
+        @media (prefers-color-scheme: dark) {
+          body {
+            color: ${textColor.dark};
+            background-color: #292929;
+          }
+
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            color: ${headingColor.dark};
+          }
+
+          a,
+          a:visited,
+          a:hover {
+            color: ${linkColor.dark};
+          }
+
+          img {
+            opacity: 0.75;
+            transition: opacity 0.25s ease-in-out;
+          }
+
+          img:hover {
+            opacity: 1;
           }
         }
       `}
