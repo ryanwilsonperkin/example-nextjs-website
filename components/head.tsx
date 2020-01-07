@@ -2,9 +2,10 @@ import React from "react";
 import NextHead from "next/head";
 
 const defaultTitle = "";
-const defaultDescription = "";
+const defaultDescription =
+  "I'm a full-stack developer living in beautiful Toronto, Ontario.";
 const defaultOGURL = "";
-const defaultOGImage = "";
+const defaultOGImage = "https://ryanwilsonperkin.com/profile.jpg";
 
 interface Props {
   title?: string;
@@ -24,6 +25,7 @@ const Head: React.FC<Props> = props => (
     <link rel="icon" href="/favicon.png" />
     <meta property="og:url" content={props.url || defaultOGURL} />
     <meta property="og:title" content={props.title || ""} />
+    <meta property="og:type" content="website" />
     <meta
       property="og:description"
       content={props.description || defaultDescription}
