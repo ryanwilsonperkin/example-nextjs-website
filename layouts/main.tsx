@@ -269,6 +269,15 @@ const MainLayout: React.FC<Props> = props => (
           a:hover {
             color: ${linkColor.dark};
           }
+
+          img {
+            opacity: 0.75;
+            transition: opacity 0.25s ease-in-out;
+          }
+
+          img:hover {
+            opacity: 1;
+          }
         }
       `}
     </style>
