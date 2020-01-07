@@ -25,6 +25,7 @@ const Head: React.FC<Props> = props => (
     <link rel="icon" href="/favicon.png" />
     <meta property="og:url" content={props.url || defaultOGURL} />
     <meta property="og:title" content={props.title || ""} />
+    <meta property="og:type" content="website" />
     <meta
       property="og:description"
       content={props.description || defaultDescription}
