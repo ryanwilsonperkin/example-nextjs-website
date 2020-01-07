@@ -2,7 +2,8 @@ import React from "react";
 import NextHead from "next/head";
 
 const defaultTitle = "";
-const defaultDescription = "";
+const defaultDescription =
+  "I'm a full-stack developer living in beautiful Toronto, Ontario.";
 const defaultOGURL = "";
 const defaultOGImage = "";
 
