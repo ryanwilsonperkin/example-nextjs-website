@@ -58,7 +58,7 @@ const MainLayout: React.FC<Props> = props => (
       {`
         body {
           color: ${textColor.light};
-          font-family: "Merriweather", serif;
+          font-family: "Merriweather", Georgia, serif;
           font-weight: 300;
           font-size: 16px;
           letter-spacing: 0.02em;
@@ -71,7 +71,7 @@ const MainLayout: React.FC<Props> = props => (
         h4,
         h5,
         h6 {
-          font-family: "Source Sans Pro", sans-serif;
+          font-family: "Source Sans Pro", Arial, sans-serif;
           color: ${headingColor.light};
           margin-bottom: 0.25em;
         }
