@@ -140,10 +140,6 @@ const MainLayout: React.FC<Props> = props => (
           margin: 0 auto;
         }
 
-        .date {
-          color: darkgrey;
-        }
-
         #title {
           text-align: center;
           text-transform: uppercase;

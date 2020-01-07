@@ -10,7 +10,7 @@ const PostLayout: React.FC<Props> = props => (
     <section id="content">
       <div className="post">
         <h1 className="title">{props.title}</h1>
-        <small className="date">Published {props.date}</small>
+        <small>Published {props.date}</small>
         {props.children}
       </div>
     </section>
