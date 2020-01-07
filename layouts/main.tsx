@@ -90,15 +90,15 @@ const MainLayout: React.FC<Props> = props => (
         a {
           font-weight: bold;
           text-decoration: none;
-          color: #428bca;
+          color: #3a7bb3;
         }
 
         a:visited {
-          color: #428bca;
+          color: #3a7bb3;
         }
 
         a:hover {
-          color: #428bca;
+          color: #3a7bb3;
         }
 
         img {
