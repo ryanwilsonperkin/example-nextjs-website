@@ -6,7 +6,7 @@ import Head from "../components/head";
 
 const Fonts: React.FC = () => (
   <link
-    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,700italic|Merriweather:300,300italic,700,700italic?display=swap"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,700italic|Merriweather:300,300italic,700,700italic&display=swap"
     rel="stylesheet"
     type="text/css"
   />
